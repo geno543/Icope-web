@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#1a1a1a"/>
+    
+    <!-- Grid Pattern -->
+    <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#333" stroke-width="0.5"/>
+    </pattern>
+    <rect width="800" height="600" fill="url(#smallGrid)" opacity="0.3"/>
+    
+    <!-- Blood Cell Representations -->
+    <g id="bloodCells">
+        <!-- Large Cells -->
+        <circle cx="200" cy="200" r="40" fill="#e63946" opacity="0.8"/>
+        <circle cx="400" cy="300" r="35" fill="#e63946" opacity="0.7"/>
+        <circle cx="600" cy="250" r="45" fill="#e63946" opacity="0.9"/>
+        
+        <!-- Small Cells -->
+        <circle cx="300" cy="150" r="20" fill="#e63946" opacity="0.6"/>
+        <circle cx="500" cy="400" r="25" fill="#e63946" opacity="0.7"/>
+        <circle cx="150" cy="350" r="30" fill="#e63946" opacity="0.8"/>
+    </g>
+    
+    <!-- Analysis Lines -->
+    <g id="analysisLines" stroke-width="2" fill="none">
+        <path d="M 100 500 Q 250 200 400 400 T 700 300" stroke="#e63946" opacity="0.8"/>
+        <path d="M 100 450 Q 300 300 500 350 T 700 250" stroke="#fff" opacity="0.3"/>
+        <path d="M 100 400 Q 200 100 400 300 T 700 200" stroke="#e63946" opacity="0.5"/>
+    </g>
+    
+    <!-- Data Points -->
+    <g id="dataPoints">
+        <circle cx="200" cy="300" r="5" fill="#fff"/>
+        <circle cx="400" cy="250" r="5" fill="#fff"/>
+        <circle cx="600" cy="350" r="5" fill="#fff"/>
+    </g>
+    
+    <!-- Measurement Lines -->
+    <g id="measurements" stroke="#444" stroke-width="1" stroke-dasharray="5,5">
+        <line x1="100" y1="100" x2="700" y2="100"/>
+        <line x1="100" y1="200" x2="700" y2="200"/>
+        <line x1="100" y1="300" x2="700" y2="300"/>
+        <line x1="100" y1="400" x2="700" y2="400"/>
+        <line x1="100" y1="500" x2="700" y2="500"/>
+    </g>
+</svg>

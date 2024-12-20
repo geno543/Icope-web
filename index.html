@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICope Medical AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="ICope Logo" class="logo-image">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="auth-buttons">
+                    <button class="btn btn-login" onclick="openModal('login')">Login</button>
+                    <button class="btn btn-signup" onclick="openModal('signup')">Sign Up</button>
+                </li>
+            </ul>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="ICope">ICope</h1>
+            <p class="subtitle">Revolutionizing Blood Analysis with AI</p>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About ICope Medical</h2>
+                    <p>ICope Medical is at the forefront of revolutionizing blood analysis through artificial intelligence. Our advanced AI algorithms provide rapid, accurate analysis of blood smears, enabling healthcare professionals to make faster, more informed decisions.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/blood-analysis.svg" alt="Blood Analysis Visualization">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-content">
+                    <div class="section-header">
+                        <span class="section-tag">Our Story</span>
+                        <h2>Our Journey</h2>
+                    </div>
+                    <p>Born from a vision to revolutionize healthcare, ICope emerged as a pioneering force in blood analysis technology. Our journey began with a simple yet powerful idea: making advanced medical diagnostics accessible to everyone.</p>
+                    <div class="story-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-value="97">0</div>
+                            <div class="stat-label">% Accuracy</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-value="3">0</div>
+                            <div class="stat-label">Minutes Analysis</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mission-content">
+                    <div class="section-header">
+                        <span class="section-tag">Our Mission</span>
+                        <h2>What Drives Us</h2>
+                    </div>
+                    <div class="mission-points">
+                        <div class="mission-item">
+                            <i class="fas fa-microscope"></i>
+                            <h3>Innovation in Healthcare</h3>
+                            <p>Developing cutting-edge AI solutions for faster, more accurate blood analysis.</p>
+                        </div>
+                        <div class="mission-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Accessibility</h3>
+                            <p>Making advanced diagnostic tools available to healthcare providers of all sizes.</p>
+                        </div>
+                        <div class="mission-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Continuous Improvement</h3>
+                            <p>Constantly evolving our technology to meet healthcare's changing needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="story-shapes">
+            <div class="shape shape-6"></div>
+            <div class="shape shape-7"></div>
+        </div>
+    </section>
+
+    <section id="research" class="research-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Research</span>
+                <h2>Our Approach</h2>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Hardware Integration</h3>
+                    <p>ESP-32 microcontroller with OV5640 camera for precise blood sample imaging</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Analysis</h3>
+                    <p>Deep learning models achieving 97% accuracy in malaria detection</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Solution</h3>
+                    <p>Real-time results through an intuitive mobile application</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Impact</span>
+                <h2>Global Reach</h2>
+            </div>
+            <div class="impact-stats">
+                <div class="stat">
+                    <div class="stat-number" data-value="97">0</div>
+                    <div class="stat-label">% Accuracy</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-value="250">0</div>
+                    <div class="stat-label">Million Annual Cases</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-value="95">0</div>
+                    <div class="stat-label">% Cost Reduction</div>
+                </div>
+            </div>
+        </div>
+        <div class="impact-shapes">
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Solutions</h2>
+                <p class="section-subtitle">Advanced AI solutions for healthcare organizations</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Basic Plan -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Clinic Package</h3>
+                        <p>Essential AI diagnostics for small clinics</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i>Basic AI Diagnostic Tools</li>
+                            <li><i class="fas fa-check"></i>Patient Data Analysis</li>
+                            <li><i class="fas fa-check"></i>Medical Image Processing</li>
+                            <li><i class="fas fa-check"></i>Basic Report Generation</li>
+                            <li><i class="fas fa-check"></i>Standard Support</li>
+                        </ul>
+                        <a href="#contact" class="btn-secondary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Advanced Plan -->
+                <div class="product-card featured">
+                    <div class="product-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Hospital Suite</h3>
+                        <p>Comprehensive AI solution for hospitals</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i>Advanced AI Diagnostics</li>
+                            <li><i class="fas fa-check"></i>Real-time Patient Monitoring</li>
+                            <li><i class="fas fa-check"></i>Multi-department Integration</li>
+                            <li><i class="fas fa-check"></i>Advanced Analytics Dashboard</li>
+                            <li><i class="fas fa-check"></i>Priority Technical Support</li>
+                            <li><i class="fas fa-check"></i>Staff Training Program</li>
+                        </ul>
+                        <a href="#contact" class="btn-secondary">Upgrade Now</a>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Enterprise Solution</h3>
+                        <p>Custom AI integration for healthcare networks</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i>Custom AI Model Development</li>
+                            <li><i class="fas fa-check"></i>Multi-hospital Management</li>
+                            <li><i class="fas fa-check"></i>Full EHR System Integration</li>
+                            <li><i class="fas fa-check"></i>Advanced Research Tools</li>
+                            <li><i class="fas fa-check"></i>24/7 Dedicated Support</li>
+                            <li><i class="fas fa-check"></i>Quarterly Strategy Reviews</li>
+                        </ul>
+                        <a href="#contact" class="btn-secondary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-subtitle">Meet the experts behind ICope Medical</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image-wrapper">
+                        <img src="images/Mohamed.jpg" alt="Dr. Sarah Johnson" class="team-image">
+                        <div class="team-social">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Mohamed Mohamed</h3>
+                        <p class="team-role">CEO & Founder</p>
+                        <p class="team-bio">Specializing in AI and software development.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image-wrapper">
+                        <img src="images/team/member2.jpg" alt="Dr. Michael Chen" class="team-image">
+                        <div class="team-social">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Youssef Ahmed</h3>
+                        <p class="team-role">CO-founder</p>
+                        <p class="team-bio">Specializing in hardware integration.</p>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Healthcare?</h2>
+                <p>Join the revolution in blood analysis technology</p>
+                <div class="cta-buttons">
+                    <a href="#products" class="btn-primary">View Products</a>
+                    <a href="#contact" class="btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@icope.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+20 115 880 6644</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Cairo, Egypt</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ICope</div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ICope. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal('login')">&times;</button>
+            <h2>Welcome Back</h2>
+            <p class="modal-description">Sign in to continue to ICope Medical</p>
+            
+            <div class="social-login">
+                <button class="social-btn google" onclick="socialLogin('google')">
+                    <i class="fab fa-google"></i>
+                    Continue with Google
+                </button>
+                <button class="social-btn facebook" onclick="socialLogin('facebook')">
+                    <i class="fab fa-facebook-f"></i>
+                    Continue with Facebook
+                </button>
+            </div>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <div class="input-group">
+                        <input type="email" id="loginEmail" required>
+                        <span class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="input-group">
+                        <input type="password" id="loginPassword" required>
+                        <span class="input-icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="options-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe">
+                        <span class="checkbox-custom"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password" onclick="openModal('reset')">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-text">Sign In</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <p class="auth-switch">
+                Don't have an account? <a href="#" onclick="switchModal('login', 'signup')">Sign Up</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal('signup')">&times;</button>
+            <h2>Create Account</h2>
+            <p class="modal-description">Join ICope Medical to access our services</p>
+
+            <div class="social-login">
+                <button class="social-btn google" onclick="socialLogin('google')">
+                    <i class="fab fa-google"></i>
+                    Sign up with Google
+                </button>
+                <button class="social-btn facebook" onclick="socialLogin('facebook')">
+                    <i class="fab fa-facebook-f"></i>
+                    Sign up with Facebook
+                </button>
+            </div>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <form id="signupForm" class="auth-form">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <div class="input-group">
+                        <input type="text" id="signupName" required>
+                        <span class="input-icon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <div class="input-group">
+                        <input type="email" id="signupEmail" required>
+                        <span class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <div class="input-group">
+                        <input type="password" id="signupPassword" required>
+                        <span class="input-icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-meter"></div>
+                        <span class="strength-text"></span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-group">
+                        <input type="password" id="confirmPassword" required>
+                        <span class="input-icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="termsAccept" required>
+                    <span class="checkbox-custom"></span>
+                    I accept the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                </label>
+
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-text">Create Account</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <p class="auth-switch">
+                Already have an account? <a href="#" onclick="switchModal('signup', 'login')">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="resetModal" class="modal">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal('reset')">&times;</button>
+            <h2>Reset Password</h2>
+            <p class="modal-description">Enter your email address and we'll send you instructions to reset your password</p>
+
+            <form id="resetForm" class="auth-form">
+                <div class="form-group">
+                    <label for="resetEmail">Email Address</label>
+                    <div class="input-group">
+                        <input type="email" id="resetEmail" required>
+                        <span class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-text">Send Reset Link</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <p class="auth-switch">
+                Remember your password? <a href="#" onclick="switchModal('reset', 'login')">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

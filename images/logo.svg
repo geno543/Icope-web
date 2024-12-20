@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        @font-face {
+            font-family: 'Arial Black';
+            font-weight: 900;
+        }
+        .text { 
+            fill: #000000;
+            font-family: 'Arial Black', sans-serif;
+            font-weight: 900;
+            letter-spacing: -2px;
+        }
+        .target { 
+            fill: #e63946;
+        }
+        .target-lines {
+            stroke: white;
+            stroke-width: 2;
+            fill: none;
+        }
+    </style>
+    
+    <!-- IC Text -->
+    <text x="5" y="45" class="text" font-size="48">IC</text>
+    
+    <!-- Target Symbol -->
+    <g transform="translate(82, 8)">
+        <!-- Main red circle -->
+        <circle cx="20" cy="20" r="20" class="target"/>
+        
+        <!-- Crosshair circles -->
+        <circle cx="20" cy="20" r="16" class="target-lines"/>
+        <circle cx="20" cy="20" r="12" class="target-lines"/>
+        <circle cx="20" cy="20" r="8" class="target-lines"/>
+        <circle cx="20" cy="20" r="4" class="target-lines"/>
+        
+        <!-- Crosshair lines -->
+        <line x1="20" y1="0" x2="20" y2="40" class="target-lines"/>
+        <line x1="0" y1="20" x2="40" y2="20" class="target-lines"/>
+        
+        <!-- Small dots at ends -->
+        <circle cx="20" cy="0" r="1" fill="white"/>
+        <circle cx="20" cy="40" r="1" fill="white"/>
+        <circle cx="0" cy="20" r="1" fill="white"/>
+        <circle cx="40" cy="20" r="1" fill="white"/>
+    </g>
+    
+    <!-- PE Text -->
+    <text x="142" y="45" class="text" font-size="48">PE</text>
+</svg>
